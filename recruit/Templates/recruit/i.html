@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta charset="UTF-8">
+    <title>Investment Firm Job Recruitment</title>
+    <link rel="icon" type="image/png" href="./Media/favicon_io/favicon-32x32.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>    
+        /* Common styles for all screen sizes */
+        body {
+            font-style: normal; 
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #0d47a1; /* Massachusetts flag blue */
+            color: #fff;
+            transition: all 0.3s ease;
+            width: auto;
+            height: auto;
+        }
+        .header {
+            padding: 20px;
+            text-align: center;
+            background-color: #c8102e;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            background-color: #c8102e; /* Massachusetts flag red */
+            background-size: auto;
+        }
+        /* ... (Previously defined styles remain the same) */
+        .section {
+            padding: 20px;
+            background-color: #f5f5f5;
+            transition: all 0.3s ease;
+            margin-top: 24px;
+            color: black;
+            margin: 16px;
+        }
+        .section-title {
+            margin: 0;
+            font-size: 24px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 10px;
+            transition: all 0.3s ease;
+        }
+        .section-content {
+            text-align: center;
+            font-size: 18px;
+            transition: all 0.3s ease;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 36px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            font-weight: bold;
+        }
+        .form-container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            background-size: cover;
+            /* background-image: url(./Media/flag-of-massachusetts.jpg); */
+            /* background-size: cover; */
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: black;
+        }
+        input[type="text"],
+        input[type="tel"],
+        textarea,
+        input[type="file"] {
+            width: calc(100% - 22px);
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+        input[type="submit"] {
+            background-color: #c8102e; /* Massachusetts flag red */
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #9b0000; /* Darker red */
+        }
+        /* Massachusetts Logo */
+        .massachusetts-logo {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .logo-container img {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            border: 4px solid #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+        }
+        image {
+              border-radius: 50;
+        }
+        footer {
+            background-color: #1C4E80;
+            color: #fff;
+            padding: 20px 0;
+            font-size: 16px;
+            text-align: center;
+            margin: 16px;
+        }
+        .footer-content {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 16px;
+        }
+        .footer-column {
+            flex: 1;
+            padding: 20px;
+            text-align: center; /* Center align content */
+        }
+        h3 {
+            color: #fff;
+            font-size: 18px;
+            margin-bottom: 10px;
+        }
+        a {
+            color: #ccc;
+            text-decoration: none;
+            transition: color 0.3s ease;
+            margin: 5px; /* Add space between links */
+        }
+        a:hover {
+            color: #fff;
+        }
+        /* Responsive styles for smaller screens */
+        @media screen and (max-width: 768px) {
+            .header h1 {
+                font-size: 20px;
+            }
+            .logo-container img {
+                width: 80px;
+                height: 80px;
+            }
+            .form-container {
+                width: 90%;
+            }
+            /* Adjustments for smaller screens */
+            .section {
+                padding: 10px;
+            }
+            .section-title {
+                font-size: 20px;
+                margin-bottom: 5px;
+            }
+            .section-content {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+    <!-- Header Section -->
+    <div class="header">
+        <!-- Company Logo -->
+        <div class="logo-container">
+            <img src="./Media/flag-of-massachusetts.jpg" alt="massachusetts-logo">
+        </div>
+        <!-- Company Recruitment Title -->
+        <div style="display: flex; justify-content: center;">
+            <h1 style="margin-right: 40px;">Join Our Investment Team</h1>
+            <button style="font-size: 14px;">
+            <a href="#form"" style="color: #0d47a1;">
+                Join Our Team
+            </a>
+        </button>
+        </div>
+    </div>
+    <div class="section">
+        <h2 class="section-title">Investment Company Overview</h2>
+        <p class="section-content">
+            Welcome to our company! Established in [year], we've been dedicated to [mission or goal] 
+            and have grown into a [size or notable achievement] company. Our core values revolve around 
+            [key values].
+        </p>
+        <p class="section-content">
+            Our diverse team collaborates to [unique approach or achievement]. 
+            We take pride in our contributions to [industry or community] and are committed to 
+            [specific commitment or goal].
+        </p>
+        <p class="section-content">
+            In the past years, we've achieved [significant achievement or milestone] and 
+            have received recognition for [notable recognition or award].
+        </p>
+    </div>
+    <!-- Our Goals Section -->
+    <div class="section">
+        <h2 class="section-title">Our Goals</h2>
+        <p class="section-content">
+            At our company, we aim to:
+        </p>
+        <ol class="section-content">
+            <li>Drive innovation and creativity in [specific area or aspect]</li>
+            <li>Deliver exceptional [product/service] experiences</li>
+            <li>Cultivate a positive and inclusive work environment</li>
+            <li>Empower our employees to excel in [specific skill or field]</li>
+            <li>Contribute to [industry or cause] through [specific action or initiative]</li>
+            <li>Foster [specific aspect or value] within our team</li>
+            <!-- Add more goals -->
+            <li>Continuously improve and adapt to [market or industry] changes</li>
+        </ol>
+    </div>
+    <!-- Our Culture Section -->
+    <div class="section">
+        <h2 class="section-title">Our Culture</h2>
+        <p class="section-content">
+            Our company culture is based on fostering creativity, collaboration, and continuous learning. 
+            We believe in transparency, open communication, and respect for diverse perspectives.
+        </p>
+        <p class="section-content">
+            We encourage initiatives that promote a healthy work-life balance, 
+            celebrate achievements, and support each other's professional growth.
+        </p>
+        <p class="section-content">
+            In our daily operations, we emphasize teamwork, empathy, and a growth mindset. 
+            We believe in taking ownership of our work, embracing challenges, and learning from failures.
+        </p>
+    </div>
+    <!-- Employee Benefits Section -->
+    <div class="section">
+        <h2 class="section-title">Employee Benefits</h2>
+        <p class="section-content">
+            Joining our team comes with a range of benefits:
+        </p>
+        <ol class="section-content">
+            <li>Competitive salaries and performance-based bonuses</li>
+            <li>Comprehensive healthcare coverage</li>
+            <li>Flexible work schedules and remote work options</li>
+            <li>Professional development and tuition reimbursement programs</li>
+            <li>Retirement plans and stock options</li>
+            <li>Paid time off, holidays, and parental leave</li>
+            <!-- Add more benefits -->
+            <li>Employee discounts and wellness programs</li>
+        </ol>
+    </div>
+    <!-- Career Growth Section -->
+    <div class="section">
+        <h2 class="section-title">Career Growth</h2>
+        <p class="section-content">
+            We're committed to supporting our employees' professional development. 
+            Joining our team means access to:
+        </p>
+        <ol class="section-content">
+            <li>Opportunities for career advancement</li>
+            <li>Mentorship and coaching programs</li>
+            <li>Continued education and skill development workshops</li>
+            <li>Participation in industry conferences and networking events</li>
+            <li>Internal mobility and cross-functional projects</li>
+            <!-- Add more growth opportunities -->
+            <li>Specialized certifications and leadership training</li>
+        </ol>
+    </div>
+    <!-- Requirements Section -->
+    <div class="section">
+        <h2 class="section-title">Requirements</h2>
+        <p class="section-content">
+            We're looking for individuals with:
+        </p>
+        <ol class="section-content">
+            <li>Proven experience in [specific field or industry]</li>
+            <li>Excellent communication and problem-solving skills</li>
+            <li>Ability to work independently and in teams</li>
+            <li>Strong attention to detail and adaptability</li>
+            <li>[Specific technical skills or qualifications]</li>
+            <!-- Add more requirements -->
+            <li>Commitment to company values and goals</li>
+        </ol>
+    </div>
+    <div class="form-container" id="form">
+        <form action="/submit-recruitment-form" method="post" enctype="multipart/form-data">
+            <label for="firstName">First Name:</label>
+            <input type="text" id="firstName" name="firstName" required>
+    
+            <label for="middleName">Middle Name:</label>
+            <input type="text" id="middleName" name="middleName">
+    
+            <label for="lastName">Last Name:</label>
+            <input type="text" id="lastName" name="lastName" required>
+    
+            <label for="phoneNumber">Phone Number:</label>
+            <input type="tel" id="phoneNumber" name="phoneNumber" required>
+    
+            <label for="homeAddress">Home Address:</label>
+            <textarea id="homeAddress" name="homeAddress" required></textarea>
+    
+            <label for="ssn">Upload Social Security Number (SSN) Image:</label>
+            <input type="file" id="ssn" name="ssnImage" accept="image/*" required>
+    
+            <label for="identification">Upload Any form of ID (Driver's License, Passport, State ID) Image:</label>
+            <input type="file" id="identification" name="idImage" accept="image/*" required>
+    
+            <label for="formalEmployer">Formal Employee and Workplace:</label>
+            <textarea id="formalEmployer" name="formalEmployer" required></textarea>
+    
+            <label for="reasonNotWorking">Reason you were not working anymore:</label>
+            <textarea id="reasonNotWorking" name="reasonNotWorking" required></textarea>
+    
+            <input type="submit" value="Submit">
+        </form>
+</div>
+    <div class="flag-background"></div>
+    <footer>
+        <div class="footer-content">
+            <!-- Footer Column 1 -->
+            <div class="footer-column">
+                <h3>Quick Links</h3>
+                <a href="https://web.mit.edu/">MIT Homepage</a><br>
+                <a href="https://www.mit.edu/about/">About MIT</a><br>
+                <a href="https://www.mit.edu/admissions-aid/">Admissions & Aid</a><br>
+                <a href="https://hr.mit.edu/">Human Resources</a><br>
+            </div>
+            <div class="logo-container">
+                <img src="./Media/flag-of-massachusetts.jpg" alt="massachusetts-logo">
+            </div>
+            <!-- Footer Column 2 -->
+            <div class="footer-column">
+                <h3>Contact Information</h3>
+                <p>Massachusetts Humbit investors</p>
+                <p>23A RHode island avenue Unit B,MA 02139-4307, USA</p>
+                <p>Phone: +1 501 301 4851</p>
+                <p>Email: info@mit.edu</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
